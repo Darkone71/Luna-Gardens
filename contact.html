@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Darcy Notar -->
+<html lang="en">
+<head>
+	<title>Luna Gardens</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap" rel="stylesheet"> 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+
+	<div id="container">
+	
+	<!-- Use the header area for the website name or logo -->
+		<header>
+			<h1>Event Facilities</h1>
+		</header>
+	</div>
+		
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="cafe.html">Cafe</a></li> 
+				<li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+		</nav>
+		
+		<!--Classes Hero Image-->
+		<div id="hero" class="tablet-desktop">
+			
+		</div>
+		
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+		
+			<div id="contact">
+			
+				<h2>Ready to reserve your special date? Contact us today.</h2> 							
+				<h4 class="mobile tel-link"><a href="tel:3605556831">(360) 555-6831</a></h4>
+				<h4 class="tablet-desktop tel-num">(360) 555-6831</h4>
+				<h4>Email us: <a href="mailto:information@lunagardens@hotmail.com" class="contact-email-link">lunagardens@hotmail.com</a></h4>
+				<h4>Visit us at: 14870 Ne Tahuya Blacksmith road, Tahuya, WA 98588</h4>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d172413.70245926062!2d-122.9058452858586!3d47.5295619108813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d47.5646029!2d-122.5917669!4m5!1s0x5491cc63113e0255%3A0xf5291df2b10682d7!2s14870%20NE%20Tahuya%20Blacksmith%20Rd%2C%20Belfair%2C%20WA%2098528!3m2!1d47.5214621!2d-122.94129849999999!5e0!3m2!1sen!2sus!4v1621702115464!5m2!1sen!2sus" width="600" height="450" allowfullscreen class="map"></iframe>
+			
+			</div>
+			
+			<div id="form"></div>
+			
+			<h2>Complete the form below to start your request.</h2>
+			
+			<form class="form-grid"><!--Start Form-->
+			
+				<fieldset>
+					<legend>Customer Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName" required>
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName" required>
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Additional Information</legend>
+					<p>I would like more information about:</p>
+					
+					<label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Facilities">Facilities</label>
+					
+					<label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Cafe">Cafe</label>
+					
+					<label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Cabins">Cabins</label>
+					
+					<label for="other"><input type="checkbox" name="interest" id="other" value="Other">Other</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Referral Source</legend>
+					<label for="reference">How did you find us?</label>
+					<select name="reference" id="reference">
+						<option value="ad">Advertisement</option>
+						<option value="friend">Friend</option>
+						<option value="google">Google</option>
+						<option value="social">Social Media</option>
+						<option value="other">Other</option>
+					</select>
+					
+					<label for="questions">Questions?</label>
+					<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="Submit" class="btn">
+				
+			</form>
+			
+		</main>
+		
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<p>&copy; Copyright 2021. All Rights Reserved.</p>
+			<p><a href="mailto:information@lunagardens@hotmail.com">lunagardens@hotmail.com</a></p>
+		</footer>
+	
+</body>
+</html>

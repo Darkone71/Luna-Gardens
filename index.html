@@ -1,13 +1,83 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<!--
+	Darcy Notar
+	May 22, 2021
+	index.html
+-->
+<html lang="en">
+<head>
+	<title>Luna Gardens</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap" rel="stylesheet"> 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+	<div id="container">
+	
+		<!--Use the header area for the website name or logo-->
+		<header>
+			<h1>Luna Gardens</h1>
+		</header>
+	</div>
+		<!--Use the nav area to add hyperlinks to other pages within the website-->
+	<nav>
+		<ul>
+            <li><a href="index.html">Home</a></li>  
+            <li><a href="about.html">About Us</a></li>   
+            <li><a href="cafe.html">Cafe</a></li>    
+			<li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+	</nav>
+		
+	<main>
+	<!-- Hero Image -->
+	<div id="hero" class="tablet-desktop">
+	<a href="index.html"><img src="images/storefront.jpg" alt="Luna Gardens photo"></a>
+			<ul class="summer hours">
+				<li>Mon-Fri: 8:00am-7:00pm</li>
+				<li>Saturday: 9:00am-6:00pm</li>
+				<li>Sunday: Closed</li>
+			</ul>
+            
+     </div>
+		
+	</main>
+	
+	<div class="grid">
+			
+			<figure class="frame">
+				<a href="Trees.html"><img src="images/trees.jpg" alt="photo of tree varieties"></a>
+				<figcaption class="pic-text">Trees</figcaption>
+			</figure>
+			
+			<figure class="frame">
+				<a href="Perennials.html"><img src="images/perennials.jpg" alt="perennial flowers"></a>
+				<figcaption class="pic-text">Perennials</figcaption>
+			</figure>
+			
+			<figure class="frame">
+				<a href="Herbs.html"><img src="images/herbs.jpg" alt="greenhouse table filled with various herbs"></a>
+				<figcaption class="pic-text">Herbs</figcaption>
+			</figure>
+				
+			<figure class="frame">
+				<a href="Lavender.html"><img src="images/lavender.jpg" alt="lavender in pots"></a>
+				<figcaption class="pic-text">Lavender</figcaption>
+			</figure>
+			
+	</div>
+	
+	<footer>
+		<p>&copy;Luna Gardens Copyright 2021. All Rights Reserved.</p>
+		<p><a href="mailto:lunagardens@hotmail.com">lunagardens@hotmail.com</a></p>
+	</footer>
+	
+</body>
+</html>
